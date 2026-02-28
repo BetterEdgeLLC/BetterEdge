@@ -1,0 +1,296 @@
+/* Dashboard Page */
+.db-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.db-title {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    font-size: var(--fs-2xl);
+    font-weight: 800;
+    color: var(--color-text-primary);
+    margin-bottom: 4px;
+}
+
+.db-symbol {
+    font-family: 'Courier New', monospace;
+    color: var(--color-accent);
+}
+
+.db-symbol-name {
+    font-size: var(--fs-base);
+    font-weight: 500;
+    color: var(--color-text-secondary);
+}
+
+.db-subtitle {
+    font-size: var(--fs-sm);
+    color: var(--color-text-muted);
+}
+
+.db-controls {
+    display: flex;
+    gap: 4px;
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 4px;
+}
+
+.db-tab {
+    padding: 7px 18px;
+    border-radius: var(--radius-sm);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    transition: all var(--transition);
+}
+
+.db-tab:hover {
+    color: var(--color-text-primary);
+    background: var(--color-bg-secondary);
+}
+
+.db-tab.active {
+    background: var(--color-accent);
+    color: white;
+}
+
+/* Probability Hub */
+.db-prob-grid {
+    margin-bottom: 24px;
+}
+
+.db-prob-card {
+    padding: 20px 22px;
+    border-radius: var(--radius-lg);
+    transition: all var(--transition);
+}
+
+.db-prob-card:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.db-prob-card-day {
+    border-top: 3px solid var(--color-accent);
+}
+
+.db-prob-label {
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--color-text-muted);
+    margin-bottom: 10px;
+}
+
+.db-prob-value {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-weight: 800;
+    color: var(--color-accent);
+    line-height: 1;
+    margin-bottom: 6px;
+    font-feature-settings: 'tnum';
+}
+
+.db-prob-sub {
+    font-size: var(--fs-xs);
+    color: var(--color-text-secondary);
+    line-height: 1.4;
+}
+
+/* Day tabs */
+.db-day-tabs {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+
+.db-day-tab {
+    padding: 8px 20px;
+    border-radius: var(--radius-md);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    transition: all var(--transition);
+}
+
+.db-day-tab:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+
+.db-day-tab.active {
+    background: var(--color-accent);
+    color: white;
+    border-color: var(--color-accent);
+}
+
+/* Color controls */
+.db-color-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.db-color-btn {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 6px 14px;
+    border-radius: var(--radius-full);
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    border: 1.5px solid var(--color-border);
+    color: var(--color-text-secondary);
+    background: var(--color-bg-card);
+    transition: all var(--transition);
+}
+
+.db-color-btn:hover {
+    border-color: currentColor;
+}
+
+.db-color-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.db-dot-all {
+    background: var(--color-accent);
+}
+
+.db-dot-bull {
+    background: var(--color-green);
+}
+
+.db-dot-bear {
+    background: var(--color-red);
+}
+
+.db-color-btn-all.active {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+    background: var(--color-accent-soft);
+}
+
+.db-color-btn-bull.active {
+    border-color: var(--color-green);
+    color: var(--color-green);
+    background: var(--color-green-soft);
+}
+
+.db-color-btn-bear.active {
+    border-color: var(--color-red);
+    color: var(--color-red);
+    background: var(--color-red-soft);
+}
+
+.db-timezone {
+    margin-left: auto;
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+}
+
+/* High / Low stat type toggle */
+.db-stat-type-toggle {
+    display: flex;
+    background: var(--color-bg-card);
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--radius-full);
+    padding: 3px;
+    gap: 2px;
+}
+
+.db-stat-type-btn {
+    padding: 4px 14px;
+    border-radius: var(--radius-full);
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    color: var(--color-text-secondary);
+    transition: all var(--transition);
+    letter-spacing: 0.02em;
+}
+
+.db-stat-type-btn:hover {
+    color: var(--color-text-primary);
+}
+
+.db-stat-type-btn.active {
+    background: var(--color-accent);
+    color: white;
+}
+
+/* Chart card */
+.db-chart-card {
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.db-chart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 22px 14px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.db-chart-title {
+    display: block;
+    font-size: var(--fs-md);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: 3px;
+}
+
+.db-chart-sub {
+    display: block;
+    font-size: var(--fs-xs);
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+}
+
+.db-chart-wrapper {
+    padding: 16px 20px 12px;
+    background: var(--color-bg-secondary);
+}
+
+.db-chart-footer {
+    display: flex;
+    gap: 24px;
+    padding: 12px 22px;
+    border-top: 1px solid var(--color-border);
+    font-size: 10px;
+    color: var(--color-text-muted);
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+/* Placeholder notice */
+.db-placeholder-notice {
+    padding: 12px 18px;
+    background: rgba(245, 158, 11, 0.08);
+    border: 1px solid rgba(245, 158, 11, 0.2);
+    border-radius: var(--radius-md);
+    font-size: var(--fs-xs);
+    color: var(--color-orange);
+    font-weight: 600;
+}
