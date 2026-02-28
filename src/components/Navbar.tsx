@@ -1,5 +1,5 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Sun, Moon, LogOut, User, Bell } from 'lucide-react';
+import { Sun, Moon, LogOut, Bell } from 'lucide-react';
 import { useTheme } from '../hooks/useTheme';
 import { useAuth } from '../hooks/useAuth';
 import './Navbar.css';
